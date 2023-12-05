@@ -1,44 +1,20 @@
-.placesearch input {
+.placesearch input,
+.search-product input {
   height: 50px;
+  width: 20rem;
+  border-radius: 5px;
   outline: none;
 }
 
 .product-search {
   margin-left: 40px;
-  height: 40px;
-
-}
-
-.product-search-input {
-  margin: 0;
-  height: 35px;
-  width: 30rem;
-  padding: 0;
-}
-
-.search-product {
-  margin-left: 20px;
 }
 
 .search-product input {
-  height: 50px;
-  width: 35rem;
-  outline: none;
+  width: 500px;
 }
-
-.search-product button {
-  background-color: rgb(17, 84, 17);
-  height: 50px;
-  width: 50px;
-  border-radius: 4px;
-  outline: none;
-  outline: none;
-  border: none;
-  padding: 10px 10px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-
+.search-product {
+  margin-left: 20px;
 }
 
 .fa-search {
@@ -46,106 +22,92 @@
   font-size: 25px;
 }
 
-.language span {
-  margin-left: 30px;
-  font-size: 18px;
-}
-
-.login span {
-  margin-left: 30px;
-  font-size: 20px;
-}
-
 .sell {
-  margin-left: 6rem;
+  margin-left: 2rem;
 }
 
-.sellproduct {
-  height: 40px;
-  width: 80px;
-  padding: 8px 16px;
-  border-radius: 10px;
-  outline: none;
-  border: 1px solid rgb(17, 84, 17);;
-  background-color: rgb(17, 84, 17);;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+.language h5 {
+  margin-left: 18px;
+  font-size: 15px;
+  margin-top: 10px;
 }
-.sellproduct:hover {
-  background-color: green; 
-  color: #ffffff; 
+.login h5{
+  margin-left: 30px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.search-product input:hover,
+.search-product input:focus {
+  border-color: initial; 
+  box-shadow: none;
+}
+.placesearch input:hover,
+.placesearch input:focus {
+  border-color: initial; /* Set the border-color to the default value */
+  box-shadow: none; /* Remove the box shadow on focus */
 }
 @media only screen and (max-width: 576px) {
-  .placesearch input {
-    width: 20rem;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
 
+  .placesearch input,
   .search-product input {
-    width: 19.2rem;
+    width: 19rem;
     margin-top: 10px;
-    border-radius: 5px;
-    outline: none;
   }
 
   .search-product {
     margin-left: 0;
-    outline: none;
   }
 
-  .language span {
-    margin-left: 0;
-    font-size: 18px;
-  }
-
-  .login span {
-    margin-left: 0;
-    font-size: 20px;
-  }
   .sell {
     margin-left: 0;
     margin-top: 10px;
   }
+
+  .language h5 {
+    margin-left: 0;
+    font-size: 17px;
+    margin-top: 5px;
+  }
+  .login h5{
+    margin-left: 0;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .search-product input {
+    width: 300px;
+  }
+  
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-  .placesearch input {
+
+  .placesearch input,
+  .search-product input {
     width: 20rem;
   }
 
   .search-product input {
     width: 20rem;
-    outline: none;
-  }
-
-  .search-product input {
-    width: 20rem;
-    margin-left: 0;
-
-    outline: none;
-  }
-
-  .product-search {
     margin-left: 0;
   }
 
+  .product-search,
   .search-product {
     margin-left: 0;
   }
-
-  .language span {
+  .language h5 {
+    margin-left: 0;
+    font-size: 17px;
+    margin-top: 5px;
+  }
+  .login h5{
     margin-left: 0;
     font-size: 18px;
-  }
-
-  .login span {
-    margin-left: 0;
-    font-size: 20px;
-  }
-  .sell {
-    margin-left: 0;
     margin-top: 10px;
   }
+  .sell{
+    margin-left: 0;
+  }
+
 }

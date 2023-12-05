@@ -1,0 +1,13 @@
+.footerdiv {
+    background-color: #002f34 !important;
+    height: 40px;
+    width: auto;
+}
+.footer-links{
+    font-size: 13px;
+}
+.footer-title{
+    font-size: 13px;
+    font-weight: 800;
+    padding-top: 20px;
+}

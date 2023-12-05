@@ -10,21 +10,24 @@ function Header() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div className="placesearch">
-            <input type="text" />
+          <div class="placesearch">
+            <input type="text" placeholder="Search Location" className="form-control" />
           </div>
-          <div className="search-product">
-            <input type="text" placeholder='Find Car and Mobiles' />
-            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+          <div class="search-product">
+            <input type="text" placeholder='Find Cars and Mobiles' className="form-control product-search-input " />
           </div>
+          <div className="btn btn-primary btn-lg"><i class="fa fa-search" aria-hidden="true"></i></div>
+
           <div className="language">
-            <span>English</span>
+            <h5>English</h5>
           </div>
+
           <div className="login">
-            <span>Login</span>
+            <h5>Login</h5>
           </div>
-          <div className="sell">
-            <button className='sellproduct'>SELL</button>
+          
+          <div class="sell">
+            <div className="btn btn-primary">Sell Products</div>
           </div>
         </div>
       </nav>
