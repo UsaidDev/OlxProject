@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.shopname {
+    text-decoration: none !important;
+    color: rgb(9, 58, 58) !important;
+    font-size: 20px !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.search1 {
+    margin-left: 10px;
+}
+
+.country-search {
+    height: 50px;
+    width: 230px;
+}
+
+.search2 {
+    margin-left: 15px;
+}
+
+.find-search {
+    width: 34rem;
+    height: 50px;
+}
+
+.find-search::placeholder {
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+.language {
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+
+.language h5 {
+    font-size: 18px;
+
+}
+
+.login {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.login h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media(max-width:576px) {
+    .search1 {}
+
+    .search2 {
+        margin-top: 10px;
+    }
+    .find-search {
+        height: 50px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .search2 {
+        margin-top: 10px;
+    }
+
+    .find-search {
+        height: 65px;
+        width: 699px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .find-search {
+        height: 50px;
+        width: 662px;
+    }
+}
