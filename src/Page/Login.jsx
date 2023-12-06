@@ -3,9 +3,9 @@ import React from 'react'
 function Login() {
   return (
     <div>
-      Login
+      Logined
     </div>
   )
 }
 
-export default Login
+export default Login;
