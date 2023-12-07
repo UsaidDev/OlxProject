@@ -22,10 +22,20 @@
   font-size: 25px;
 }
 
+.login-link{
+  text-decoration: none !important;
+  margin-left: 30px;
+  color:#333;
+}
+.login-link:hover{
+  color: #333;
+}
 .sell {
   margin-left: 2rem;
 }
-
+.navbar-brand{
+  margin-top:10px;
+}
 .language h5 {
   margin-left: 18px;
   font-size: 15px;
@@ -36,7 +46,9 @@
   font-size: 15px;
   margin-top: 10px;
 }
-
+.form-control{
+  margin-top: 15px;
+}
 .search-product input:hover,
 .search-product input:focus {
   border-color: initial; 
@@ -44,8 +56,8 @@
 }
 .placesearch input:hover,
 .placesearch input:focus {
-  border-color: initial; /* Set the border-color to the default value */
-  box-shadow: none; /* Remove the box shadow on focus */
+  border-color: initial;
+  box-shadow: none;
 }
 @media only screen and (max-width: 576px) {
 
@@ -57,6 +69,13 @@
 
   .search-product {
     margin-left: 0;
+  }
+  .login-link{
+    margin-left: 0;
+    color: #333;
+  }
+  .login-link:hover{
+    color: #333;
   }
 
   .sell {
@@ -79,7 +98,6 @@
   }
   
 }
-
 @media only screen and (min-width: 577px) and (max-width: 768px) {
 
   .placesearch input,
@@ -90,6 +108,13 @@
   .search-product input {
     width: 20rem;
     margin-left: 0;
+  }
+  .login-link{
+    margin-left: 0;
+    color: #333;
+  }
+  .login-link:hover{
+    color: #333;
   }
 
   .product-search,

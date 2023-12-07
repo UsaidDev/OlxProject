@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <footer class="text-center text-lg-start bg-body-tertiary bg-light">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-md-3 col-lg-3 mx-auto">
               <h6 class="text-uppercase fw-bold footer-title">POPULAR LOCATIONS</h6>
