@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Signup.css';
 import { Link } from 'react-router-dom';
-import {auth} from '../Firebase/Firebase'
-import {createUserWithEmailAndPassword} from 'firebase/auth'
+import { auth } from '../Firebase/Firebase'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
@@ -16,21 +16,20 @@ function Signup() {
         const { name, value } = e.target;
         Setformvalue({ ...formvalue, [name]: value });
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
         SetformError(validation(formvalue));
         setIsSubmit(true);
-        if(formvalue){
-            createUserWithEmailAndPassword(auth, formvalue.email, formvalue.password).then((res)=>{
+        if (formvalue) {
+            createUserWithEmailAndPassword(auth, formvalue.email, formvalue.password).then((res) => {
                 navigate('/')
             })
-            .catch(()=>console.log('Error'))
+            .catch(() => console.log('Error'))
         }
     }
     useEffect(() => {
         if (Object.keys(formError).length === 0 && isSubmit) {
-            
+
         }
     }, [formError, isSubmit, formvalue]);
 

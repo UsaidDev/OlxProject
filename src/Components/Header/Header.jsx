@@ -26,7 +26,9 @@ function Header() {
             </Link>
           </div>
           <div class="sell">
-            <div className="btn btn-primary">Sell Products</div>
+            <Link to={'/sellproduct'}>
+              <div className="btn btn-primary">Sell Products</div>
+            </Link>
           </div>
         </div>
       </nav>
