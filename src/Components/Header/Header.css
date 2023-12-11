@@ -13,6 +13,7 @@
 .search-product input {
   width: 500px;
 }
+
 .search-product {
   margin-left: 20px;
 }
@@ -22,43 +23,52 @@
   font-size: 25px;
 }
 
-.login-link{
+.login-link {
   text-decoration: none !important;
   margin-left: 30px;
-  color:#333;
-}
-.login-link:hover{
   color: #333;
 }
+
+.login-link:hover {
+  color: #333;
+}
+
 .sell {
   margin-left: 2rem;
 }
-.navbar-brand{
-  margin-top:10px;
+
+.navbar-brand {
+  margin-top: 10px;
 }
+
 .language h5 {
   margin-left: 18px;
   font-size: 15px;
   margin-top: 10px;
 }
-.login h5{
+
+.login h5 {
   margin-left: 30px;
   font-size: 15px;
   margin-top: 10px;
 }
-.form-control{
+
+.form-control {
   margin-top: 15px;
 }
+
 .search-product input:hover,
 .search-product input:focus {
-  border-color: initial; 
+  border-color: initial;
   box-shadow: none;
 }
+
 .placesearch input:hover,
 .placesearch input:focus {
   border-color: initial;
   box-shadow: none;
 }
+
 @media only screen and (max-width: 576px) {
 
   .placesearch input,
@@ -70,11 +80,13 @@
   .search-product {
     margin-left: 0;
   }
-  .login-link{
+
+  .login-link {
     margin-left: 0;
     color: #333;
   }
-  .login-link:hover{
+
+  .login-link:hover {
     color: #333;
   }
 
@@ -88,16 +100,19 @@
     font-size: 17px;
     margin-top: 5px;
   }
-  .login h5{
+
+  .login h5 {
     margin-left: 0;
     font-size: 18px;
     margin-top: 10px;
   }
+
   .search-product input {
     width: 300px;
   }
-  
+
 }
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
 
   .placesearch input,
@@ -109,11 +124,13 @@
     width: 20rem;
     margin-left: 0;
   }
-  .login-link{
+
+  .login-link {
     margin-left: 0;
     color: #333;
   }
-  .login-link:hover{
+
+  .login-link:hover {
     color: #333;
   }
 
@@ -121,17 +138,20 @@
   .search-product {
     margin-left: 0;
   }
+
   .language h5 {
     margin-left: 0;
     font-size: 17px;
     margin-top: 5px;
   }
-  .login h5{
+
+  .login h5 {
     margin-left: 0;
     font-size: 18px;
     margin-top: 10px;
   }
-  .sell{
+
+  .sell {
     margin-left: 0;
   }
 
