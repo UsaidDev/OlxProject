@@ -7,7 +7,7 @@ function Signup() {
     const [email, Setemail] = useState('')
     const [password, Setpassword] = useState('')
     const handleSubmit = (e) => {
-        e.preventDefault();//Last ivide Ver
+        e.preventDefault();
     }
 
     return (

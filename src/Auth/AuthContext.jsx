@@ -1,16 +1,12 @@
-import React, { createContext, useState } from 'react'
+import { createContext } from "react";
 import Signup from '../Components/Signup/Signup'
+import firebase from "../Firebase/config";
 
-const NameContext = createContext('')
-function AuthContext() {
-    const [state, Setstate] = useState('This IS Context')
-    return (
-        <div>
-            <NameContext.Provider value={{ state }}>
-                <Signup />
-            </NameContext.Provider>
-        </div>
-    )
-}
+const AuthContext = createContext(firebase)
+const Auth = () => (
+    <AuthContext.Provider value={firebase}>
+        <Signup />
+    </AuthContext.Provider>
+);
 
-export default AuthContext
+export default Auth;
