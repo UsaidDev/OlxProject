@@ -8,4 +8,4 @@ function Sellproducts() {
   )
 }
 
-export default Sellproducts
+export default Sellproducts;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Signup.css';
 import { Link } from 'react-router-dom';
-
 function Signup() {
     const [username, Setusername] = useState('');
     const [email, Setemail] = useState('')
@@ -9,7 +8,6 @@ function Signup() {
     const handleSubmit = (e) => {
         e.preventDefault();
     }
-
     return (
         <div className="container">
             <form className="signup-form" onSubmit={handleSubmit}>
