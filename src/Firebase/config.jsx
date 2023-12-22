@@ -1,4 +1,6 @@
 import { initializeApp } from "firebase/app";
+import 'firebase/auth'
+import 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: "AIzaSyCRFmb3CBQYWLFnUH7iK8RChlX08nAyVpM",
@@ -9,5 +11,4 @@ const firebaseConfig = {
   appId: "1:130976844401:web:6e40745c5df8b150ec29d0",
   measurementId: "G-ERLDWC65XC"
 };
-
 export const firebase=initializeApp(firebaseConfig);

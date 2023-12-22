@@ -1,18 +1,38 @@
-import React, { useState,useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import './Signup.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FirebaseContext } from '../../Store/Fire_context';
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 function Signup() {
     const [username, Setusername] = useState('');
     const [email, Setemail] = useState('');
     const [password, Setpassword] = useState('');
-    const [phone,Setphone]=useState('');
-    const {firebase}=useContext(FirebaseContext)
+    const [phone, Setphone] = useState('');
 
-    const handleSubmit = (e) => {
+    const { firebase } = useContext(FirebaseContext)//Context
+
+    const db = getFirestore()
+    const userCollection = collection(db, 'users');
+
+    const navigate = useNavigate()
+    const auth = getAuth()
+
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(firebase)
+        createUserWithEmailAndPassword(auth, email, password).then((result) => {
+            addDoc(userCollection, {
+                id: result.user.uid,
+                username: username,
+                phone: phone
+            }).then(() => {
+                alert('Success fully Signup')
+                navigate('/login')
+            })
+        }).catch((error) => {
+            alert(error)
+        })
     }
     return (
         <div className="container">
