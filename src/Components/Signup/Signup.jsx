@@ -31,7 +31,7 @@ function Signup() {
                 navigate('/login')
             })
         }).catch((error) => {
-            alert(error)
+            console.log(error)
         })
     }
     return (
