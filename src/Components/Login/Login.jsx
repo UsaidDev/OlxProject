@@ -1,15 +1,21 @@
 import React from 'react';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { firebase } from '../../Firebase/config'
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 function Login() {
   const [email, Setemail] = useState('')
   const [password, Setpassword] = useState('')
+  const auth = getAuth(firebase)
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(email)
-    console.log(password)
+    signInWithEmailAndPassword(auth, email, password).then(() => {
+      alert("Login Success Fully Completed")
+      navigate('/')
+    })
   }
   return (
     <div>
@@ -29,7 +35,7 @@ function Login() {
         </form>
       </div>
     </div>
-  );
+  )
 }
 
 export default Login;

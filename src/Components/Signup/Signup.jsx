@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useState} from 'react';
 import './Signup.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { FirebaseContext } from '../../Store/Fire_context';
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
@@ -11,7 +10,6 @@ function Signup() {
     const [password, Setpassword] = useState('');
     const [phone, Setphone] = useState('');
 
-    const { firebase } = useContext(FirebaseContext)//Context
 
     const db = getFirestore()
     const userCollection = collection(db, 'users');
