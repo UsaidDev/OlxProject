@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import './Signup.css';
 import { Link } from 'react-router-dom';
+import { FirebaseContext } from '../../Store/Fire_context';
+
 function Signup() {
     const [username, Setusername] = useState('');
-    const [email, Setemail] = useState('')
-    const [password, Setpassword] = useState('')
+    const [email, Setemail] = useState('');
+    const [password, Setpassword] = useState('');
+    const [phone,Setphone]=useState('');
+    const {firebase}=useContext(FirebaseContext)
+
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
+        console.log(firebase)
     }
     return (
         <div className="container">
@@ -19,6 +25,10 @@ function Signup() {
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" name="email" value={email} onChange={((e) => Setemail(e.target.value))} required />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="number">Phone</label>
+                    <input type="number" id="number" name="number" value={phone} onChange={((e) => Setphone(e.target.value))} required />
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password</label>

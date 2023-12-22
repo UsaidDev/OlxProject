@@ -5,11 +5,9 @@
   border-radius: 5px;
   outline: none;
 }
-
 .product-search {
   margin-left: 40px;
 }
-
 .search-product input {
   width: 500px;
 }
@@ -68,7 +66,6 @@
   border-color: initial;
   box-shadow: none;
 }
-
 @media only screen and (max-width: 576px) {
 
   .placesearch input,
@@ -89,7 +86,6 @@
   .login-link:hover {
     color: #333;
   }
-
   .sell {
     margin-left: 0;
     margin-top: 10px;

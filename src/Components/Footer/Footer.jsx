@@ -39,7 +39,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="container-fluid text-center p-4 footerdiv text-white">
+        <div className="text-center p-4 footerdiv text-white">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-6 text-md-left">
               <div className="footer-div">

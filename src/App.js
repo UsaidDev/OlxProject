@@ -4,6 +4,7 @@ import Login from './Page/Login'
 import SignupPage from "./Page/SignupPage";
 import Sellproduct from './Page/Sellproducts';
 import Notfound from "./Page/Notfound";
+import './App.css'
 
 const App = () => {
   return (
